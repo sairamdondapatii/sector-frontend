@@ -1,5 +1,6 @@
 import React from "react";
-import { useGlobalcontext } from "../context/contextProvider";
+import { useGlobalcontext } from "../../context/ContextProvider";
+
 
 const Form = () => {
     const { handlesubmit, handlechange, data, sector, sectorvalue } = useGlobalcontext();
