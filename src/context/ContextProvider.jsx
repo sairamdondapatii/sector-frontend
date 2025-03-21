@@ -61,7 +61,7 @@ const ContextProvider = ({children}) => {
   )
 }
 
-export default ContextProvider
+export { ContextProvider}
 
 export const useGlobalcontext = ()=>{
     return useContext(context);
