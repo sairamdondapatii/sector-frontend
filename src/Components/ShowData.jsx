@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RenderTable from "./renderTable";
+import RenderTable from "./RenderTable";
 import Button from "./Button";
 
 const ShowData = () => {
