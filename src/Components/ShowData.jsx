@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import RenderTable from "./RenderTable";
 import Button from "./Button";
+import { RenderTable } from "./renderTable";
 
 const ShowData = () => {
   const [sector, setSector] = useState("");
@@ -57,7 +57,7 @@ const ShowData = () => {
       </form>
 
       <div className="mt-8">
-        <RenderTable data={data} />
+        <RenderTable data={data}/>
       </div>
 
       {/* Export Buttons */}

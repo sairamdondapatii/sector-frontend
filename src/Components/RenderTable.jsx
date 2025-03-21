@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const RenderTable = ({ data }) => {
   if (data.length === 0) {
     return <p className="text-gray-600 text-center mt-4">Select an sector to view data</p>;
@@ -35,4 +36,4 @@ const RenderTable = ({ data }) => {
   );
 };
 
-export default RenderTable;
+export { RenderTable};
