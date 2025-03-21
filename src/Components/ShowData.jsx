@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import { RenderTable } from "./renderTable";
+import { RenderTable } from "./RenderTable";
+
 
 const ShowData = () => {
   const [sector, setSector] = useState("");
