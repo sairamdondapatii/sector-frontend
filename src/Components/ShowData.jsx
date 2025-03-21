@@ -13,7 +13,7 @@ const ShowData = () => {
   const getData = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch(`http://localhost:8090/data/getdata?sector=${sector}`);
+      let response = await fetch(`https://sector-backend.onrender.com/data/getdata?sector=${sector}`);
       let result = await response.json();
       setData(result);
     } catch (error) {
@@ -65,12 +65,12 @@ const ShowData = () => {
         <div className="mt-6 flex flex-wrap justify-center gap-4">
         <Button 
           text="Export as Excel" 
-          link={`http://localhost:8090/data/${sector}/export/excel`}
+          link={`https://sector-backend.onrender.com/${sector}/export/excel`}
           className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-md hover:scale-105 transition"
         />
         <Button 
           text="Export as PDF" 
-          link={`http://localhost:8090/data/${sector}/export/pdf`}
+          link={`https://sector-backend.onrender.com/${sector}/export/pdf`}
           className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-md  hover:scale-105 transition"
         />
       </div>

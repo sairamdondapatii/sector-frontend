@@ -39,7 +39,7 @@ const ContextProvider = ({children}) => {
     e.preventDefault();
     console.log(data);
     try {
-      let response = await fetch("http://localhost:8090/data/postdata", {
+      let response = await fetch("https://sector-backend.onrender.com/data/postdata", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
